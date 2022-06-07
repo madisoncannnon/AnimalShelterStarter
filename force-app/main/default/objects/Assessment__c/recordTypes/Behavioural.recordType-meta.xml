@@ -20,6 +20,21 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Assessment_Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>For Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Assessment_Type__c</picklist>
         <values>
             <fullName>Entry</fullName>
@@ -197,6 +212,124 @@
         </values>
         <values>
             <fullName>Unsteady</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>New_Behaviours__c</picklist>
+        <values>
+            <fullName>Aggressive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anxious</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad Recall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cannot be held</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good Recall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good with Children</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good with other species</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good with same species</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Happy being handled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Reactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pulls on Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resource Guarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Separation Anxiety</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Previous_Behaviours__c</picklist>
+        <values>
+            <fullName>Aggressive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anxious</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad Recall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cannot be held</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good Recall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good with Children</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good with other species</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good with same species</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Happy being handled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Reactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pulls on Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resource Guarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Separation Anxiety</fullName>
             <default>false</default>
         </values>
     </picklistValues>
