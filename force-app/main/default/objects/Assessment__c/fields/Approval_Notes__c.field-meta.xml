@@ -5,7 +5,7 @@
     <inlineHelpText>Enter notes for the record Creator, if the behavioural update is rejected</inlineHelpText>
     <label>Approval Notes</label>
     <length>32768</length>
-    <trackHistory>false</trackHistory>
+    <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>LongTextArea</type>
     <visibleLines>3</visibleLines>
