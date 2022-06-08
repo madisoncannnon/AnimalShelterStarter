@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Assessment_Approval_Status__c</fullName>
     <externalId>false</externalId>
+    <inlineHelpText>Set an Approval Status.  When update is complete set status to For Approval</inlineHelpText>
     <label>Assessment Approval Status</label>
     <required>false</required>
     <trackHistory>true</trackHistory>

@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>New_Behaviours__c</fullName>
     <externalId>false</externalId>
+    <inlineHelpText>Choose the new updated behaviours</inlineHelpText>
     <label>New Behaviours</label>
     <required>false</required>
     <trackHistory>true</trackHistory>

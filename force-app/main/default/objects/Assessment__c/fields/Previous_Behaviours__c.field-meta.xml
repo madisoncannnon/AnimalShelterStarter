@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Previous_Behaviours__c</fullName>
     <externalId>false</externalId>
+    <inlineHelpText>Behaviours pulled from the previous assessment or Animal</inlineHelpText>
     <label>Previous Behaviours</label>
     <required>false</required>
     <trackHistory>true</trackHistory>
