@@ -418,7 +418,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Create_Tasks_Records</targetReference>
+                <targetReference>Call_Tasks_Subflow</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -502,8 +502,8 @@
     <dynamicChoiceSets>
         <name>Treatment_Types</name>
         <dataType>Picklist</dataType>
-        <displayField xsi:nil="true"/>
-        <object xsi:nil="true"/>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
         <picklistField>%%%NAMESPACED_ORG%%%Treatment_Type__c</picklistField>
         <picklistObject>%%%NAMESPACED_ORG%%%Treatment__c</picklistObject>
     </dynamicChoiceSets>
@@ -564,19 +564,6 @@
         </value>
     </processMetadataValues>
     <processType>Flow</processType>
-    <recordCreates>
-        <name>Create_Tasks_Records</name>
-        <label>Create Tasks</label>
-        <locationX>1799</locationX>
-        <locationY>237</locationY>
-        <connector>
-            <targetReference>Final_Screen</targetReference>
-        </connector>
-        <faultConnector>
-            <targetReference>Error_Screen</targetReference>
-        </faultConnector>
-        <inputReference>AnimalActionTaskCollection</inputReference>
-    </recordCreates>
     <recordCreates>
         <name>Generate_Action_Records</name>
         <label>Generate Action Records</label>
@@ -813,6 +800,7 @@
                     <stringValue>Related Condition</stringValue>
                 </value>
             </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <outputParameters>
                 <assignToReference>Related_Condition_Selected</assignToReference>
@@ -830,6 +818,34 @@
         </connector>
     </start>
     <status>Active</status>
+    <subflows>
+        <name>Call_Tasks_Subflow</name>
+        <label>Call Tasks Subflow</label>
+        <locationX>1691</locationX>
+        <locationY>65</locationY>
+        <connector>
+            <targetReference>Final_Screen</targetReference>
+        </connector>
+        <flowName>Animal_Generate_Tasks_Subflow</flowName>
+        <inputAssignments>
+            <name>ActionTasks</name>
+            <value>
+                <elementReference>AnimalActionTaskCollection</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>taskObjectType</name>
+            <value>
+                <stringValue>Action</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>TaskQueueName</name>
+            <value>
+                <stringValue>Animal_Tasks</stringValue>
+            </value>
+        </inputAssignments>
+    </subflows>
     <variables>
         <name>AnimalActionDate</name>
         <dataType>DateTime</dataType>
@@ -873,7 +889,7 @@
         <dataType>SObject</dataType>
         <isCollection>true</isCollection>
         <isInput>false</isInput>
-        <isOutput>false</isOutput>
+        <isOutput>true</isOutput>
         <objectType>Task</objectType>
     </variables>
     <variables>
