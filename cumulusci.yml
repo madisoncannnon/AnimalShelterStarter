@@ -1,4 +1,6 @@
 project:
+    dependencies:
+        - github: https://github.com/SalesforceFoundation/NPSP
     name: animal_shelter_starter
     package:
         name: Animal Shelter Starter
@@ -8,6 +10,10 @@ project:
     git:
         default_branch: "master"
         repo_url: https://github.com/madisoncannon/AnimalShelterStarter
+
+sources:
+    npsp:
+        github: https://github.com/SalesforceFoundation/NPSP
 
 tasks:
     robot:
@@ -50,6 +56,12 @@ tasks:
                 - "FlexiPage: "
 
 flows:
+    install_npsp:
+        steps:
+            1:
+                flow: npsp:install_prod
+            2:
+                flow: dev_org
     post_config:
         steps:
             1:
